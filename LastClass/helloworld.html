@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>(1) تمرين</title>
+    <style>
+
+        /* The typing effect */
+        @keyframes typing {
+        from { width: 0 }
+        to { width: 100%;}
+        }
+
+        /* The typewriter cursor effect */
+        @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: blue }
+        }
+
+        .typewriter p {
+            overflow: hidden; /* Ensures the content is not revealed until the animation */
+            border-right: .15em solid orange; /* The typwriter cursor */
+            white-space: nowrap; /* Keeps the content on a single line */
+            margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+            letter-spacing: .15em; /* Adjust as needed */
+            animation: 
+                typing 3.5s steps(40, end),
+                blink-caret .75s step-end infinite;
+}
+        *{
+            margin: 0;
+            padding: 0;
+            font-size: 25px;
+        }
+        body{
+            background-image: url(pic.jpg); /* Background */
+            text-align: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        h1{
+            background-color: #264653;
+            padding: 6px;
+        }
+        h3{
+            background-color: #2a9d8f;
+            padding: 2px;
+        }
+        .para{
+            background-color: #e9c46a;
+            padding: 10px;
+        }
+        .test{
+            background-color: #264653;
+            padding: 10px;
+        }
+        .test2{
+            background-color: #e9c46a;
+            width: 376px;
+            height: 90px;
+            padding: 10px;
+            top: 550px;
+            right: 20px;
+            position: absolute;
+            z-index: 1;
+        }
+        img{
+            width: 400px;
+            height: 300px;
+            position: absolute;
+            right: 0px;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <!-- 13/6/2020 -->
+    <div data-aos="zoom-in">
+
+    <div data-aos="fade-up"><h1>!مرحباً</h1>
+
+    <h3>هذا موقعي الاول</h3></div>
+    <div data-aos="fade-right">
+    <p class="para">
+        .اسمي عبدالعزيز القطان وانا طالب في مبادرة الكويت تبرمج
+        اخترت مسار برمجة المواقع لحبي بالتصميم والبرمجة
+    </p>
+</div>   
+    <!-- 13/6/2020 -->
+    <div class="test">
+    <div data-aos="flip-left">      
+    <bold style="background-color: #e76f51;">
+        عبدالعزيز عادل القطان
+    </bold>
+    </div>
+    <div data-aos="flip-right">
+    <i><mark>مبادرة الكويت تبرمج</mark></i>
+    </div>
+        
+    </div>  
+
+    <aside>
+        <div class="test2">
+            <div class="typewriter">
+        <p> تمرين اول من الكويت تبرمج</p>
+        <p>الطالب عبدالعزيز عادل القطان</p>
+    </div>
+        </div>
+        <br>
+        <div>
+            <img src="bootcamps.png"/>
+        </div>
+    </aside>
+
+</div>
+    <!-- 13/6/2020 -->
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+</html>
